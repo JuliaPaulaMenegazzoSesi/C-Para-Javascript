@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dados do Competidor</title>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div class="content">
+        <h1>Dados do Competidor</h1>
     <div class="inputs">
         <label for="code">Informe o código:</label>
         <input type="text" id="code">
@@ -16,42 +19,17 @@
         <input type="text" id="age">
         <label for="height">Informe a altura:</label>
         <input type="text" id="height">
-        <label for="code">Informe o peso:</label>
+        <label for="weight">Informe o peso:</label>
         <input type="text" id="weight">
         <button onclick="enviar()">Enviar</button>
     </div>
     <div class="texto">
-        <p class="info">
-            O competidor <span id="infoCode"></span> possui <span id="infoAge"></span> anos, pesa <span id="infoWeight"></span> e mede <span id="infoHeight"></span>
-        </p>
+        <p id="info"></p>
     </div>
-
+    </div>
+    <div class="img">
+        <img src="code.png" alt="código" width="50%">
+    </div>
 </body>
 
 </html>
-
-
-
-<!-- #include<stdio.h>
-    #include<stdlib.h>
-    //exercico 10
-    
-    int main(){
-        int code, age;
-        float height, weight;
-        
-        printf("Qual o codigo:");
-         scanf("%d", &code);
-        printf("Qual o idade:");
-            scanf("%d", &age);
-        printf("Qual o altura:");
-         scanf("%f", &height);
-        printf("Qual o peso:");
-         scanf("%f", &weight);
-        printf("\n");
-        
-        printf("O competidor %d , tem %d anos, pesa %.2f Kg e tem %.2f de altura. \n", code, age, weight,height);
-        
-        system("pause");
-        return 0;
-    }		  -->

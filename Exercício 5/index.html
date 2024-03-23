@@ -1,54 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício 5</title>
+    <title>Horas Trabalhadas</title>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>Horas trabalhadas</h1>
-    <input type="number" id="horan" placeholder="Informe o número de horas normais trabalhadas no ano">
-    <input type="number" id="horae" placeholder="Informe o número de horas extras trabalhadas no ano">
-    <button onclick="calcular()">Calcular</button>
-    <p id="resultado"></p>
-</body>
-</html>
 
-<!-- #include<stdio.h>
-    #include<stdlib.h>
-    #include<locale.h>
-    
-    #define hora 10.00
-    #define horaextra 15.00
-    
-    int main(){
-        setlocale(LC_ALL,"Portuguese");
-        
-        float horas_normais = 0, horas_extras = 0, horasnorm_resul = 0, horasext_resul = 0, resul = 0, poup = 0;
-        
-        printf("Informe o numero de horas normais trabalhadas no ano:\n");
-        fflush(stdin);
-        scanf("%f",&horas_normais);
-        
-        printf("Informe o numero de horas extras trabalhadas no ano:\n");
-        fflush(stdin);
-        scanf("%f",&horas_extras);
-        
-        horasnorm_resul = horas_normais * hora;
-        horasext_resul = horas_extras * horaextra;
-        resul = horasnorm_resul + horasext_resul;
-        
-        poup = resul * 0.08;
-        
-        printf("______________________________________________________\n");
-        printf("Valor de horas normais: %.2f reais\n\n",horasnorm_resul);
-        printf("Valor de horas extras: %.2f reais\n\n",horasext_resul);
-        printf("Total de ganho no ano = %.2f reais\n\n", resul);
-        printf("Valor a guardar na poupança = %.2f reais\n\n", poup);
-        printf("______________________________________________________\n");
-        
-        
-        system("pause");
-        return 0;
-    } -->
+<body>
+    <div class="content">
+        <h1>Horas trabalhadas</h1>
+        <label for="">Informe o número de horas normais trabalhadas no ano:</label>
+        <input type="number" id="horan">
+        <label for="">Informe o número de horas extras trabalhadas no ano:</label>
+        <input type="number" id="horae">
+        <button onclick="calcular()">Calcular</button>
+        <p id="resultado"></p>
+    </div>
+    <div class="img">
+        <img src="code.png" alt="código" width="50%">
+    </div>
+</body>
+
+</html>

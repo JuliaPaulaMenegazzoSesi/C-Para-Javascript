@@ -4,25 +4,16 @@ body{
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    gap: 20vw;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 5vw;
 }
 
 .content{
     display: flex;
     flex-direction: column;
-    margin-left: 20vw;
+    margin-left: 5vw;
 }
 
-.inputs {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 10px;
+.img{
+    margin-left: 10vw;
 }
-
-button{
-    margin-top: 10px;
-}
-
-
